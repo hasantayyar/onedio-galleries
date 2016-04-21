@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Onedio Galeriler",
+  "short_name": "OnedioGaleriler",
+  "description": "Her yeni açıla sekmede onedio galerilerini listeleyin. Kaçırmayın.",
+  "version": "1.1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "*://*.onedio.com/*"
+  ],
+  "icons": {
+    "16": "assets/img/icon16.png",
+    "48": "assets/img/icon48.png",
+    "128": "assets/img/icon128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "chrome_url_overrides": {
+    "newtab": "galleries.html"
+  },
+  "homepage_url": "http://onedio.com",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_title": "Onedio Galeriler",
+    "default_icon": "assets/img/icon128.png"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Onedio Galleries</title>
+
+  <link href="assets/img/icon16.png" rel="icon" sizes="16x16" type="image/png">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/handlebar.js"></script>
+  <script src="assets/js/onedio_galleries.js"></script>
+
+</head>
+<body>
+  <div id="container">
+    <div class="header">
+      <h1>Onedio Galleries</h1>
+    </div>
+
+    <div class="galleries">
+    </div>
+  </div>
+
+  <script id="galleries_list" type="text/x-handlebars-template">
+    {{#galleries}}
+
+    {{{html}}}
+
+    {{/galleries}}
+  </script>
+
+
+</body>
+</html>
